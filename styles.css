@@ -1,19 +1,19 @@
 /* border-box ensures elements include padding and border in their specified width and height*/
 * {
     box-sizing: border-box;
-  }
+}
 
-  body {
-    background-color: #c9d2fc; 
-  }
+body {
+    background-color: #c9d2fc;
+}
 
-  /*When you use the relative value, the element is still positioned according to the normal flow of the document, 
-   but the top, left, bottom, and right values become active*/
+/*When you use the relative value, the element is still positioned according to the normal flow of the 
+document,, but the top, left, bottom, and right values become active*/
 
-  /*The next position property is absolute. When you use the absolute value for your position property, 
+/*The next position property is absolute. When you use the absolute value for your position property, 
   the element is taken out of the normal flow of the document, and then its position is determined by 
   the top, right, bottom, and left properties.*/
-  .cat-head {
+.cat-head {
     position: absolute;
     right: 0;
     left: 0;
@@ -24,24 +24,24 @@
     width: 205px;
     height: 180px;
     border: 1px solid #000;
-     border-radius: 46%;
+    border-radius: 46%;
 }
 
-/*The transform property allows you to modify the shape, position, and size of an element without changing
- the layout or affecting the surrounding elements.*/
+/*The transform property allows you to modify the shape, position, and size of an element without 
+changing the layout or affecting the surrounding elements.*/
 
- /*z-index is a property you can use to define the order of overlapping HTML elements. 
+/*z-index is a property you can use to define the order of overlapping HTML elements. 
  Any element with a higher z-index will always be positioned over an element with a lower z-index*/
 .cat-left-ear {
     position: absolute;
     top: -26px;
     left: -31px;
-    z-index: 1; 
+    z-index: 1;
     border-top-left-radius: 90px;
     border-top-right-radius: 10px;
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
-    border-bottom: 70px solid #5e5e5e; 
+    border-bottom: 70px solid #5e5e5e;
     transform: rotate(-45deg);
 }
 
@@ -55,8 +55,8 @@
     border-top-right-radius: 10px;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-bottom: 40px solid #3b3b4f;  
-  }
+    border-bottom: 40px solid #3b3b4f;
+}
 
 .cat-right-ear {
     position: absolute;
@@ -65,13 +65,13 @@
     z-index: 1;
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
-    border-bottom: 70px solid #5e5e5e; 
+    border-bottom: 70px solid #5e5e5e;
     transform: rotate(45deg);
     border-top-left-radius: 90px;
     border-top-right-radius: 10px;
-  }
+}
 
-  .cat-right-inner-ear {
+.cat-right-inner-ear {
     position: absolute;
     top: 22px;
     left: -20px;
@@ -80,11 +80,11 @@
     border-top-left-radius: 90px;
     border-top-right-radius: 10px;
     border-left: 20px solid transparent;
-    border-right: 20px solid transparent; 
-    border-bottom: 40px solid #3b3b4f; 
-  }
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #3b3b4f;
+}
 
-  .cat-left-eye {
+.cat-left-eye {
     position: absolute;
     top: 54px;
     left: 39px;
@@ -93,9 +93,9 @@
     width: 30px;
     height: 40px;
     background-color: #000;
-  }
+}
 
-  .cat-left-inner-eye {
+.cat-left-inner-eye {
     position: absolute;
     top: 8px;
     left: 2px;
@@ -104,9 +104,9 @@
     transform: rotate(10deg);
     background-color: #fff;
     border-radius: 60%;
-  }
+}
 
-  .cat-right-eye {
+.cat-right-eye {
     position: absolute;
     top: 54px;
     left: 134px;
@@ -115,9 +115,9 @@
     width: 30px;
     height: 40px;
     background-color: #000;
-  }
+}
 
-  .cat-right-inner-eye {
+.cat-right-inner-eye {
     position: absolute;
     top: 8px;
     left: 18px;
@@ -126,7 +126,14 @@
     height: 20px;
     background-color: #fff;
     border-radius: 60%;
+}
+
+.cat-nose {
+    position: absolute;
+    top: 108px;
+    left: 85px;
+    border-radius: 50%;
+    transform: rotate(180deg);
+    border: 15px solid transparent;
+    border-bottom: 20px solid #442c2c; 
   }
-
-
-  
